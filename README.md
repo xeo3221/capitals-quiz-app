@@ -1,50 +1,20 @@
-# React + TypeScript + Vite
+# Capitals Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an interactive Capital Quiz application built using React, TypeScript, and Tailwind CSS. The app challenges users to test their geography knowledge by selecting the correct capital city for each presented country. Users can choose their answers from multiple-choice options, and at the end of the quiz, their score is displayed, showing how well they know the world's capitals. The app is designed to be both educational and fun, with a responsive layout and intuitive user interface for an engaging experience on any device.
 
-Currently, two official plugins are available:
+Website hosted here -> https://xeo3221.github.io/capitals-quiz-app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
+- React
+- TypeScript
+- TailwindCSS
 
-## Expanding the ESLint configuration
+## Design
+![image](https://github.com/user-attachments/assets/48718243-af41-4737-aa6c-8c7f76c274ea)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![image](https://github.com/user-attachments/assets/c46f5bc8-2034-4e85-bdbf-76423992ef47)
 
-- Configure the top-level `parserOptions` property like this:
+![image](https://github.com/user-attachments/assets/eeb1a837-1f90-40ed-b278-e1e3bc21733b)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
